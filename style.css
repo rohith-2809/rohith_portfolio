@@ -9,7 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  cursor: url('custom_round_cursor.png'), auto; /* Use your custom cursor image */
+  cursor: url('https://example.com/path/to/your/round-cursor.png'), auto; /* Use your custom cursor image */
 }
 
 html {

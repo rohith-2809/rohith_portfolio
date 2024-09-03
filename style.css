@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  cursor: url('custom_round_cursor.png'), auto; /* Use your custom cursor image */
 }
 
 html {
@@ -24,6 +25,16 @@ p {
 a,
 .btn {
   transition: all 300ms ease;
+}
+
+/* HOVER EFFECTS */
+h1, h2, h3, p, a {
+  transition: color 300ms ease, font-weight 300ms ease;
+}
+
+h1:hover, h2:hover, h3:hover, p:hover, a:hover {
+  color: rgb(0, 123, 255); /* Change to your desired color */
+  font-weight: 600; /* Change font-weight on hover */
 }
 
 /* DESKTOP NAV */
@@ -418,46 +429,37 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
+  padding: 1rem;
+  gap: 1rem;
 }
 
-.contact-info-upper-container:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.contact-info-upper-container img {
+  height: 4rem;
+  width: 4rem;
+  margin: auto;
 }
 
-.contact-info-container {
+.contact-info-upper-container div {
+  font-weight: 600;
+}
+
+.contact-info-lower-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
 }
 
-.contact-info-container p {
-  font-size: larger;
+.contact-info-lower-container form {
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  border-radius: 2rem;
+  padding: 2rem;
 }
 
-.contact-icon {
-  cursor: default;
-}
-
-.contact-icon:hover {
-  transform: scale(1.1);
-}
-
-.email-icon {
-  height: 2rem; /* Adjust this value to match the size of other icons */
-}
-
-/* FOOTER SECTION */
+/* FOOTER */
 
 footer {
-  height: 20vh;
-  margin: 0 1rem;
-}
-
-footer p {
   text-align: center;
+  padding: 4rem 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
